@@ -17,7 +17,11 @@ p stops.count
 # 8. How many ways can we return `"Falkirk High"` from the array?
 p stops[2]
 p stops.fetch(2)
-# 9. Reverse the positions of the stops in the array
 
-# 10. Print out all the stops using a for loop
+# 9. Reverse the positions of the stops in the array
+stops.reverse!
 p stops
+# 10. Print out all the stops using a for loop
+for stop in stops
+  p stop
+end
