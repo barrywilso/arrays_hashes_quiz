@@ -70,7 +70,20 @@ p lottery.select{ |x|  x % 2 == 0}
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 p users["Erik"][:lottery_numbers].push(7)
 # 8. Change Erik's hometown to Edinburgh
-
+p users["Erik"][:home_town] = "Edinburgh"
 # 9. Add a pet dog to Erik called "Fluffy"
 
 # 10. Add another person to the users hash
+users["Barry"] = {
+  :twitter => "never",
+  :lottery_numbers => [01, 03, 05, 7, 11, 13],
+  :home_town => "Glasgow",
+  :pets => [
+    {
+      :name => "Dean",
+      :species => "dog"
+    }
+  ]
+}
+
+p users
